@@ -6,6 +6,32 @@
 
 
 //by Zach
+function trans(key) {
+	text = document.getElementById("tocode").value;
+	//alert("GGGGGG");
+	if(!isNaN(key))
+	{
+		translated = cipher(text,key);
+		document.getElementById("translated").innerHTML = translated;
+	}
+}
+
+//by Zach
+function encrypt() {
+	key = Number(document.getElementById("key").value);
+	trans(key);
+}
+
+//by Zach
+function decrypt() {
+	key = Number(document.getElementById("key").value);
+	if(!isNaN(key)) {
+		key = 26-key;
+		trans(key);
+	}
+}
+
+//by Zach
 //Enter a string to encode / decode, then a key to use. Returns the encoded / decoded string
 function cipher(string, offset) {
 	string = string.toLowerCase();
@@ -31,5 +57,3 @@ function cipher(string, offset) {
 	}
 	return newStr;
 }
-
-//Need a text box for input string, text box for input key, and a div to place output in
