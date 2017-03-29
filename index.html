@@ -1,31 +1,54 @@
 <!-- By zach -->
 <html>
 	<head>
-		<title>CaesarCipher</title>
+		<title>Caesar Cipher</title>
 	</head>
-	//By Rankin
+	<!--By Rankin-->
 	<style>
 	body{ 
 background-color:#eaedf2;
 font-family:"Palatino Linotype";
 color: black;
 font-size:32px;
+
 }
 h1{
 font-family:"Palatino Linotype";
 color: black;
-font-size:32px;
+font-size:25px;
 }
-
+        p1{
+font-family:"Palatino Linotype";
+color: black;
+font-size:20px;
+}
+         p2{
+font-family:"Palatino Linotype";
+color: black;
+font-size:20px;
+background-color:black;
+}
+        h2{
+font-family:"Palatino Linotype";
+color: black;
+font-size:15px;
+}
+        button{
+    background-image:url(https://i0.wp.com/www.wallpapersbyte.com/wp-content/uploads/2015/07/Gray-Gradient-Bright-Light-Background-Abstract-WallpapersByte-com-1366x768.jpg?w=1240);
+            color:green
+}
 </style>
 	<body><h1><center>
-	Welcome to a Caesar Cipher encrytper and decrypter!
+	Welcome to a Caesar Cipher Encrytper and Decrypter!
 	<h1/><center/>
-	<center><p>In the first text box please input the characters to be encrypted/decrypted. In the second box please input your key number (1-26).<p/><center/>
+	<center><p1>In the first text box please input the characters to be encrypted/decrypted. In the second box please input your key, i.e any number between (1-26).<p1/><center/>
 	<center>
-	<input type="text" id="tocode"> To </input><input type="text" id="key"></input><br/>
+	<p2><input type="text" id="tocode"> to </input><input type="text" id="key"></input><br/>
 	<button onclick="encrypt()">Encrypt</button>   <button onclick="decrypt()">Decrypt</button><br/>
-	<div id="translated"></div>
+	<div id="translated"></div></p2>
 	<center/><body/>
-	<script src="./default.js"></script>
+        <script src="./default.js"></script>
+        <h2> The image below is an example of one of the keys that can be used in a caesar ciper. Source (jverkamp.com)</h2>
+        <img src="https://blog.jverkamp.com/2014/03/12/caesar-cipher/caesar-shift.png" width=500px height=300px
+		
 </html>
