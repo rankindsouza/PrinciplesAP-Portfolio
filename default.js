@@ -1,4 +1,3 @@
-
 //input = prompt("Enter a string");
 //key = prompt("Enter key");
 //key = Number(key);
@@ -11,9 +10,21 @@ function trans(key) {
 	//alert("GGGGGG");
 	if(!isNaN(key))
 	{
+		key=verifyKey(key);
 		translated = cipher(text,key);
 		document.getElementById("translated").innerHTML = translated;
 	}
+}
+
+//By Rankin
+function verifyKey(key){
+	newKey = (key%26);
+		if(newKey < 1) {
+			newKey = 1;
+		}
+	return newKey;
+	
+	
 }
 
 //by Zach
@@ -37,7 +48,6 @@ function cipher(string, offset) {
 	string = string.toLowerCase();
 	alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 	newStr = "";
-	offset%=alphabet.length;
 	for(i = 0; i < string.length; i++) {
 		index = -1;
 		for(k = 0; k < alphabet.length; k++) {
