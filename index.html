@@ -1,12 +1,31 @@
 <!-- By zach -->
 <html>
 	<head>
-		<title>Cipher</title>
+		<title>CaesarCipher</title>
 	</head>
-	
+	//By Rankin
+	<style>
+	body{ 
+background-color:#eaedf2;
+font-family:"Palatino Linotype";
+color: black;
+font-size:32px;
+}
+h1{
+font-family:"Palatino Linotype";
+color: black;
+font-size:32px;
+}
+
+</style>
+	<body><h1><center>
+	Welcome to a Caesar Cipher encrytper and decrypter!
+	<h1/><center/>
+	<center><p>In the first text box please input the characters to be encrypted/decrypted. In the second box please input your key number (1-26).<p/><center/>
+	<center>
 	<input type="text" id="tocode"> To </input><input type="text" id="key"></input><br/>
 	<button onclick="encrypt()">Encrypt</button>   <button onclick="decrypt()">Decrypt</button><br/>
 	<div id="translated"></div>
-	
+	<center/><body/>
 	<script src="./default.js"></script>
 </html>
